@@ -8,7 +8,7 @@ def remover_acentos(texto):
 #EXIBIR MENU COM PRODUTOS (CÓDIGO, NOME, PREÇO)
 def exibir_menu(produtos):
     print("\n" + "="*35)
-    print("      TABELA DE PRODUTOS")
+    print("         TABELA DE PRODUTOS")
     print("="*35)
     for codigo, (nome, preco) in produtos.items():
         print(f"{codigo:>2} - {nome:<20} - R${preco:>6.2f}")
@@ -121,7 +121,7 @@ def sistema_mercado():
     # Finalização
     if total > 0:
         print("\n" + "="*30)
-        print("       CUPOM FISCAL")
+        print("         CUPOM FISCAL")
         print("="*30)
         for item, valor in carrinho:
             print(f"{item:<18} R$ {valor:>7.2f}")
