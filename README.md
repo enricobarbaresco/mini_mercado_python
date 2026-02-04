@@ -11,6 +11,15 @@ Um simulador de Ponto de Venda (PDV) desenvolvido em Python para o terminal. O s
 - **Carrinho Dinâmico:** Exibição de subtotal a cada item adicionado.
 - **Cupom Fiscal:** Impressão formatada dos itens, total e cálculo de troco.
 
+## Lógica de Normalização de Dados
+Um dos desafios deste projeto foi garantir que o sistema fosse resiliente a variações de entrada do usuário. Para isso, implementei uma função de Normalização de Strings:
+
+Remoção de Acentos: Utilizei um mapeamento (dicionário) de caracteres acentuados para suas versões base. Isso permite que entradas como "maçã", "maca" ou "MAÇÃ" sejam processadas corretamente.
+
+Case Insensitivity: Apliquei o método .lower() em conjunto com a limpeza de espaços em branco (.strip()), garantindo que a comparação entre a entrada do usuário e o banco de dados de produtos seja padronizada.
+
+Busca Híbrida: O sistema identifica automaticamente se a entrada é um dígito (ID) ou texto (Nome), direcionando para a lógica de busca mais eficiente em cada caso.
+
 ## 🛠️ Tecnologias
-- **Python 3.x**
+- **Python 3.13**
 - Conceitos aplicados: Dicionários, Listas, Manipulação de Strings, Tratamento de Exceções (`try/except`) e Loops.
