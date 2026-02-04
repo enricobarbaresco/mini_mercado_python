@@ -23,3 +23,13 @@ Busca Híbrida: O sistema identifica automaticamente se a entrada é um dígito 
 ## 🛠️ Tecnologias
 - **Python 3.13**
 - Conceitos aplicados: Dicionários, Listas, Manipulação de Strings, Tratamento de Exceções (`try/except`) e Loops.
+- Paradigma: Programação Funcional (organização em funções modulares).
+
+## Visual do Projeto
+
+=== CUPOM FISCAL ===
+Banana             R$    5.50
+Arroz (5kg)        R$   28.90
+------------------------------
+TOTAL              R$   34.40
+==============================
